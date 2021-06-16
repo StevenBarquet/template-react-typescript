@@ -93,6 +93,8 @@ module.exports = {
       1,
       {
         "extensions": [
+          ".ts",
+          ".tsx",
           ".js",
           ".jsx"
         ]

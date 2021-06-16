@@ -25,7 +25,7 @@ module.exports = {
   },
   // Crear shortcuts para paths absolutos
   resolve: {
-    extensions: ['.js', '.jsx'],
+    extensions: ['.js', '.jsx', 'ts', 'tsx'],
     alias: {
       Comp: path.resolve(__dirname, '../src/javascript/components'),
       Pages: path.resolve(__dirname, '../src/javascript/cPages'),
@@ -45,6 +45,11 @@ module.exports = {
         test: /\.(js|jsx)$/,
         use: 'babel-loader', // incluir babel
         exclude: /node_modules/ // excluye esa carpeta
+      },
+      {
+        test: /\.(ts|tsx)$/,
+        exclude: /node_modules/,
+        use: ['ts-loader']
       },
       {
         test: /\.svg$/,

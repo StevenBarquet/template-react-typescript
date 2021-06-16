@@ -15,6 +15,7 @@ import reducers from 'Reducers';
 import AppContainer from './AppContainer';
 
 // More redux configuration
+
 let composeEnhancers = null;
 if (process.env.NODE_ENV === 'development') {
   composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__;

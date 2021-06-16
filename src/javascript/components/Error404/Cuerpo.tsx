@@ -2,12 +2,6 @@
 import React from 'react';
 
 // ------------------------------------------ COMPONENT-----------------------------------------
-function Titulo() {
-  return (
-    <React.Fragment>
-      <h1>Error 404</h1>
-    </React.Fragment>
-  );
-}
-
-export default Titulo;
+export const Cuerpo: React.FC = () => {
+  return <p>Lo siento, la página que buscas no existe.</p>;
+};
